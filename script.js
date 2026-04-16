@@ -1,52 +1,18 @@
-// Smooth scroll effect for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    const target = document.querySelector(this.getAttribute('href'));
-
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth'
-      });
-    }
-  });
+// Button click
+document.querySelector(".btn").addEventListener("click", function() {
+    alert("✅ Appointment booked! We will contact you soon.");
 });
 
-// Show alert when CTA buttons are clicked
-const ctaButtons = document.querySelectorAll('.cta-btn');
+// Greeting
+let hour = new Date().getHours();
+let msg = "";
 
-ctaButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    alert("Thank you for your interest! Our team will contact you soon.");
-  });
-});
+if (hour < 12) msg = "🌅 Good Morning!";
+else if (hour < 18) msg = "☀️ Good Afternoon!";
+else msg = "🌙 Good Evening!";
 
-// Fade-in sections while scrolling
-const sections = document.querySelectorAll('section');
+let greet = document.createElement("p");
+greet.innerText = msg;
+greet.style.marginTop = "10px";
 
-window.addEventListener('scroll', () => {
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
-
-    if (sectionTop < windowHeight - 100) {
-      section.classList.add('show');
-    }
-  });
-});
-
-// Dark mode toggle
-const darkModeBtn = document.getElementById('darkModeBtn');
-
-if (darkModeBtn) {
-  darkModeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-
-    if (document.body.classList.contains('dark-mode')) {
-      darkModeBtn.innerText = "Light Mode";
-    } else {
-      darkModeBtn.innerText = "Dark Mode";
-    }
-  });
-}
+document.querySelector("header").appendChild(greet);
