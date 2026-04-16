@@ -3,127 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UGC Ad Prompt System</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>GlowCare Skin Clinic</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0f4c81, #3aa6b9);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: white;
+      color: #0f4c81;
+      padding: 12px 24px;
+      text-decoration: none;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #e6f0f5;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      margin-bottom: 20px;
+      color: #0f4c81;
+      text-align: center;
+    }
+
+    .section p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .services {
+      background-color: #ffffff;
+    }
+
+    .service-box {
+      background: #eaf4f8;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-box h3 {
+      color: #0f4c81;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .service-box p {
+      text-align: center;
+    }
+
+    .cta {
+      background: #0f4c81;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      color: white;
+    }
+
+    .cta p {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      background: #082c4a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p,
+      .section p {
+        font-size: 16px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header class="hero">
     <div class="container">
-      <h1>UGC Ad Prompt System</h1>
-      <p class="subtitle">
-        AI-Powered UGC Ad Script Generator for Local Businesses and Brands
-      </p>
-      <button id="darkModeBtn" class="btn">Dark Mode</button>
+      <h1>GlowCare Skin Clinic</h1>
+      <p>Clear Skin. Real Confidence. Expert Care You Can Trust.</p>
+      <a href="#contact" class="btn">Book Appointment</a>
     </div>
   </header>
 
-  <main class="container">
-    <section>
-      <h2>1. Introduction</h2>
-      <p>
-        Today’s brands grow faster with UGC-style ads that feel real, honest,
-        and relatable. These ads perform better because they sound like normal
-        customer experiences instead of traditional promotions.
-      </p>
-    </section>
+  <section class="section">
+    <div class="container">
+      <h2>Healthy, Glowing Skin Starts Here</h2>
+      <p>Helping people in Hyderabad achieve radiant and healthy skin with expert care and personalized treatments.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>2. Objective</h2>
-      <ul>
-        <li>Generate short UGC-style ad scripts</li>
-        <li>Create multiple hooks for one product or business</li>
-        <li>Follow problem → solution → CTA structure</li>
-        <li>Adapt tone for different platforms</li>
-        <li>Create ad-ready content for Reels, Shorts, and Ads</li>
-      </ul>
-    </section>
+  <section class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>GlowCare Skin Clinic provides expert dermatology care with modern technology, trusted treatments, and a patient-first approach.</p>
+    </div>
+  </section>
 
-    <section>
-      <h2>3. Business Chosen</h2>
-      <p><strong>Glow &amp; Grace Beauty Salon – Vijayawada</strong></p>
-      <p>
-        This local salon was chosen as a real example to create UGC ad scripts
-        that feel natural, relatable, and ready for social media promotions.
-      </p>
-    </section>
+  <section class="section services">
+    <div class="container">
+      <h2>Our Services</h2>
 
-    <section>
-      <h2>4. Tools Used</h2>
-      <ul>
-        <li>ChatGPT</li>
-        <li>Claude</li>
-        <li>Google Gemini</li>
-        <li>CapCut</li>
-        <li>Runway</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>5. Sample Hooks</h2>
-      <div class="card">
-        <p>1. I finally found a salon I actually trust.</p>
-        <p>2. My hair has never looked this good.</p>
-        <p>3. Vijayawada girls, you need to try this salon.</p>
-        <p>4. I booked one appointment… now I keep going back.</p>
-        <p>5. Why is nobody talking about this salon?</p>
+      <div class="service-box">
+        <h3>Acne Treatment</h3>
+        <p>Clearer skin with long-term results and expert skin guidance.</p>
       </div>
-    </section>
 
-    <section>
-      <h2>6. UGC Ad Script</h2>
-      <div class="card">
-        <p>
-          “Okay, I need to tell you about this salon. I’ve tried so many salons
-          before, but every time, my haircut never looked the way I wanted.
-          Then one of my friends suggested Glow &amp; Grace Beauty Salon in
-          Vijayawada. The staff actually listened to what I wanted, and the
-          result was honestly so good. If you’re looking for a new salon in
-          Vijayawada, just book an appointment here.”
-        </p>
+      <div class="service-box">
+        <h3>Skin Brightening</h3>
+        <p>Radiant, healthy, and even-toned skin with safe treatment options.</p>
       </div>
-      <button class="btn cta-btn">Book Appointment</button>
-    </section>
 
-    <section>
-      <h2>7. Platform-Specific Style</h2>
-      <table>
-        <tr>
-          <th>Platform</th>
-          <th>Style</th>
-        </tr>
-        <tr>
-          <td>Instagram Reels</td>
-          <td>Fast, emotional, relatable</td>
-        </tr>
-        <tr>
-          <td>YouTube Shorts</td>
-          <td>Story-based, slightly detailed</td>
-        </tr>
-        <tr>
-          <td>Facebook Ads</td>
-          <td>Clear, direct, trust-focused</td>
-        </tr>
-        <tr>
-          <td>TikTok</td>
-          <td>Casual, quick, fun</td>
-        </tr>
-      </table>
-    </section>
+      <div class="service-box">
+        <h3>Anti-Aging Solutions</h3>
+        <p>Professional care to maintain youthful, fresh, and healthy-looking skin.</p>
+      </div>
 
-    <section>
-      <h2>8. Conclusion</h2>
-      <p>
-        This project shows how AI and Prompt Engineering can help businesses
-        create high-converting UGC ad content. It can be used as a portfolio
-        project, freelance service, or agency offering.
-      </p>
-    </section>
-  </main>
+      <div class="service-box">
+        <h3>Laser Hair Removal</h3>
+        <p>Smooth, hair-free skin with advanced and comfortable procedures.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta" id="contact">
+    <div class="container">
+      <h2>Book Your Consultation</h2>
+      <p>Take the first step toward healthier skin with trusted specialists.</p>
+      <button class="btn" onclick="showMessage()">Book Appointment</button>
+    </div>
+  </section>
 
   <footer>
-    <p>Created by Mahathi Parisa</p>
+    <p>© 2026 GlowCare Skin Clinic. All Rights Reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function showMessage() {
+      alert("Thank you! Your appointment request has been submitted.");
+    }
+  </script>
+
 </body>
 </html>
