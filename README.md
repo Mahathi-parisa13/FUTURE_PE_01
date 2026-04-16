@@ -1,84 +1,85 @@
-# AI Website Copy Generator for Local Businesses
+# AI Website Copy Framework for Alika The Salon
 
-This project demonstrates how Prompt Engineering + AI can be used to create professional, conversion-focused website copy for local businesses.
+This project demonstrates how Prompt Engineering and AI tools can generate professional, conversion-focused website copy for a local business.
 
-The goal of this project is to solve a common problem faced by many small businesses:
+The selected business for this project is **Alika The Salon, Vijayawada**, a premium unisex salon offering hair, beauty, bridal, and grooming services.
 
-- unclear website messaging
-- weak value proposition
-- confusing calls-to-action
-- generic and outdated content
+---
 
-Using AI tools and structured prompts, this project generates ready-to-use website content that can improve trust, clarity, and customer conversions.
+# Project Objective
+
+Many local businesses struggle with:
+
+- Unclear website copy
+- Weak value propositions
+- Generic content
+- Poor calls-to-action
+
+This project solves those problems by creating a reusable prompt system that generates:
+
+- Homepage copy
+- Services page content
+- Persuasive CTA sections
+- Tone variations for different business styles
+
+The final content is designed to be ready for a real business website.
 
 ---
 
 # Business Chosen
 
-## Glow & Grace Beauty Salon
+**Business Name:** Alika The Salon  
+**Location:** Vijayawada  
+**Business Type:** Unisex Salon & Beauty Studio
 
-- Business Type: Beauty Salon
-- Location: Vijayawada, Andhra Pradesh
-- Target Audience: Women aged 18–45
+### Services Offered
+- Haircuts & Styling
+- Hair Spa & Keratin
+- Facials & Skin Care
+- Bridal Makeup
+- Waxing, Manicure & Pedicure
 
-The salon needed stronger website copy to help visitors understand its services and encourage appointment bookings.
-
----
-
-# Objective
-
-Create a reusable prompt framework that can generate:
-
-- Homepage copy
-- Services page content
-- Call-to-action sections
-- Tone-based variations for different businesses
-
-The system is designed so that it can later be reused for:
-
-- salons
-- cafes
-- clinics
-- coaching institutes
-- agencies
-- freelancers
+### Target Audience
+- Working professionals
+- College students
+- Brides-to-be
+- Families
 
 ---
 
 # Tools Used
 
-## AI Tools
 - ChatGPT
 - Claude
 - Google Gemini
-
-## Website Builders
-- Lovable
+- Lovable AI
 - Framer AI
 
-## Languages Used
-- HTML
-- CSS
-- JavaScript
+---
+
+# Prompt Framework
+
+The project uses four structured prompts:
+
+1. Homepage Copy Prompt
+2. Services Page Prompt
+3. CTA Prompt
+4. Tone Adaptation Prompt
+
+Each prompt includes:
+- Business type
+- Target audience
+- Services
+- Location
+- Desired tone
+- Output format
 
 ---
 
-# Features
-
-✔ Conversion-focused homepage copy  
-✔ Clear value proposition  
-✔ Service descriptions with benefits  
-✔ Strong call-to-action sections  
-✔ Friendly and business-specific tone  
-✔ Reusable prompts for multiple business types  
-✔ Website-ready content  
-
----
-
-# Folder Structure
+# Files Included
 
 ```text
-local-business-copywriting-project/
+project/
 │
 ├── index.html
 ├── style.css
@@ -86,17 +87,13 @@ local-business-copywriting-project/
 ├── README.md
 │
 ├── prompts/
-│   ├── homepage_prompt.txt
-│   ├── services_prompt.txt
-│   ├── cta_prompt.txt
-│   └── tone_variations.txt
+│   ├── homepage-prompt.md
+│   ├── services-prompt.md
+│   ├── cta-prompt.md
+│   └── tone-prompt.md
 │
-├── outputs/
-│   ├── homepage_copy.md
-│   ├── services_copy.md
-│   ├── cta_copy.md
-│   └── full_website_copy.md
-│
-└── screenshots/
-    ├── homepage-preview.png
-    └── services-preview.png
+└── outputs/
+    ├── homepage-copy.md
+    ├── services-copy.md
+    ├── cta-copy.md
+    └── tone-variations.md
